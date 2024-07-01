@@ -226,7 +226,6 @@ return [
         Webkul\Theme\Providers\ThemeServiceProvider::class,
         Webkul\User\Providers\UserServiceProvider::class,
         SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
-        ECPay\Providers\ECPayServiceProvider::class,
     ])->toArray(),
 
     /*

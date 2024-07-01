@@ -1,0 +1,47 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Support\Facades\DB;
+use Webkul\DataGrid\DataGrid;
+
+class $CLASS$ extends DataGrid
+{
+    /**
+     * Prepare query builder.
+     *
+     * @return \Illuminate\Database\Query\Builder
+     */
+    public function prepareQueryBuilder()
+    {
+        //queryBuilder = DB::table('table')->addSelect('id');
+
+        //return $queryBuilder;
+    }
+
+    /**
+     * Add columns.
+     *
+     * @return void
+     */
+    public function addColumns()
+    {
+        $this->addColumn([
+            'index'      => 'id',
+            'label'      => 'Id',
+            'type'       => 'number',
+            'searchable' => false,
+            'sortable'   => true,
+            'filterable' => true,
+        ]);
+    }
+
+    /**
+     * Prepare actions.
+     *
+     * @return void
+     */
+    public function prepareActions()
+    {
+    }
+}

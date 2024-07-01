@@ -3,7 +3,7 @@
 return [
     [
         'key'    => 'sales.paymentmethods.ecpay',
-        'name'   => '綠界',
+        'name'   => 'ECPay',
         'sort'   => 1,
         'fields' => [
             [
